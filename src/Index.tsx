@@ -6,8 +6,6 @@ import 'react-native-gesture-handler';
 
 export default React.memo(function Index() {
     return(<ThemeProvider>
-        <NavigationContainer>
-            <App />
-        </NavigationContainer>
+        <App />
     </ThemeProvider>);
 });
