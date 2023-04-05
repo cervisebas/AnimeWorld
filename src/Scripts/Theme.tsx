@@ -6,5 +6,5 @@ import GetThemeForToken, { GetThemeNavigation } from "./GetThemeForToken";
 /*export const ThemeLight: MD3Theme = GetThemeForToken(tokens as any, 'light');
 export const ThemeNavigationLight: NavTheme = GetThemeNavigation(ThemeLight);*/
 
-export const ThemeDark: MD3Theme = GetThemeForToken(tokens as any, 'dark');
+export const ThemeDark: MD3Theme = GetThemeForToken(tokens as any, 'light');
 export const ThemeNavigationDark: NavTheme = GetThemeNavigation(ThemeDark);

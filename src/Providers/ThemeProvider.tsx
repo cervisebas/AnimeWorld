@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { createContext } from "react";
 import { MD3DarkTheme, MD3Theme } from "react-native-paper";
 import { Theme as NavTheme, DarkTheme as NavThemeDark } from "@react-navigation/native";
-import { ThemeDark } from "../Scripts/Theme";
+import { ThemeDark, ThemeNavigationDark } from "../Scripts/Theme";
 
 export type ThemeContextType = {
     theme: MD3Theme;
@@ -18,7 +18,7 @@ export const ThemeContext = createContext<ThemeContextType>({
 
 export default React.memo(function ThemeProvider(props: any) {
     const [theme, _setTheme] = useState(ThemeDark);
-    const [themeNav, _setThemeNav] = useState(NavThemeDark);
+    const [themeNav, _setThemeNav] = useState(ThemeNavigationDark);
 
     function setTheme(_theme: 'normal' | 'dark') {
         if (_theme == 'dark') return _setTheme(ThemeDark);

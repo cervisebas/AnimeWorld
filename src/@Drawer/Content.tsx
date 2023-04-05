@@ -10,8 +10,8 @@ export default React.memo(function DrawerContent(props: DrawerContentComponentPr
 
     return(<View style={[styles.content, {
         backgroundColor: theme.colors.elevation.level2,
-        borderTopRightRadius: borderRadius,
-        borderBottomRightRadius: borderRadius
+        //borderTopRightRadius: borderRadius,
+        //borderBottomRightRadius: borderRadius
     }]}>
         <ScrollView>
             
